@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>All Blog</title>
+    </head>
+    <body>
+        <h1>basicBlog Django</h1>
+        <hr>
+        {% for blog in qs %}
+            <h2>{{blog.title}}</h2>
+            <p><strong>{{blog.date}}</strong></p>
+            <p>{{blog.body}}</p>
+            <hr>
+        {% endfor %}
+    </body>
+</html>
